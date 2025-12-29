@@ -1,0 +1,160 @@
+body{
+    background-image: linear-gradient(to bottom,blueviolet 30%,#6e08cd 100%);  /* A transição acontece entre 0% e 50%, com a mudança mais evidente no meio desses pontos */
+    color: aliceblue; 
+}
+
+.oswald-400 {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.dropdown-item{
+    color: aliceblue
+}
+.dropdown-item:focus,
+.dropdown-item:active {
+    background-color: black !important;
+    color: aliceblue !important;
+}
+
+h1{
+    font-size: 7rem;
+}
+
+h2{
+    font-size: 4rem;
+}
+
+h3{
+    font-size: 2rem;
+}
+
+p{
+    font-size: 1.25rem;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    background-color: black;
+    color: aliceblue;
+}
+
+.tend h3:hover{
+    background-color: black;
+    color: aliceblue;
+}
+
+.banner{
+    background-image: linear-gradient(to bottom, #8a2be2cc 0%, blueviolet 100%), url('../img/banner.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding: 7rem;
+}
+
+.eventweb, .tendweb, .paisweb, .estiloweb, .letrasweb, .anosweb, .instweb, .genweb{
+    padding: 7rem;
+}
+
+.tend img{
+    padding: 2rem;
+    width: 100%;
+    height: auto;
+}
+
+.zoom-on-click {
+    transition: transform 0.3s ease-in-out, z-index 0.3s ease-in-out; /* Suaviza a transição */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    display: inline-block; /* Essencial para que o transform funcione corretamente */
+    /* Define um tamanho inicial para as imagens, se necessário. Se já estiver em .img-fluid e col, pode ser opcional. */
+    /* max-width: 250px; */
+    /* height: auto; */
+}
+
+.zoom-on-click.zoomed {
+    transform: scale(3.0); /* Aumenta a imagem */
+    position: relative; /* Crucial para o z-index funcionar */
+    z-index: 1000; /* Coloca a imagem ampliada acima de outros elementos */
+}
+
+
+.pais ul{
+    list-style-type: none;
+    padding: 0;
+    line-height: 1.5rem;
+}
+
+.albweb img{
+    width: 50%;
+    height: auto;
+    border-radius: 5%;
+   
+}
+
+.footer{
+    background-color: black;
+    padding: 2rem;
+    color: aliceblue;
+}
+
+.footer h2{
+    float: left;
+    color: aliceblue;
+}
+
+.footer p{
+    float: right;
+    padding: 2rem;
+}
+
+/* Para ecrãs menores, como smartphones pequenos (largura máxima de 500px) */
+@media (max-width: 500px) {
+    h1 {
+        font-size: 3.5rem; /* Reduzir ainda mais h1 */
+    }
+
+    h2 {
+        font-size: 2rem; /* Reduzir ainda mais h2 */
+    }
+
+    h3 {
+        font-size: 1.5rem; /* Reduzir ainda mais h3 */
+    }
+
+    p {
+        font-size: 0.95rem; /* Ajustar parágrafos */
+    }
+
+    .banner {
+        padding: 3rem 0.5rem; /* Ajustar padding do banner */
+    }
+
+    .eventweb, .tendweb, .paisweb, .estiloweb, .letrasweb, .anosweb, .instweb, .genweb{
+        padding: 2rem 0.5rem; /* Ajustar padding para as secções de conteúdo */
+    }
+
+    /* Reduzir o zoom-on-click para smartphones, se 3.0 for muito grande */
+    .zoom-on-click.zoomed {
+        transform: scale(1.5); /* Menos zoom para telas muito pequenas */
+    }
+    .footer .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer h2,
+    .footer p {
+        float: none;       /* Cancela os floats em mobile */
+        padding: 0;        /* Remove padding lateral excessivo */
+        margin-bottom: 1rem;
+    }
+
+}

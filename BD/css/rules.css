@@ -1,0 +1,32 @@
+body{
+    background-color: darkred;
+    font-family:fantasy;
+    color: antiquewhite;
+}
+
+.navbar-color{
+    background-color: orange;
+}
+
+.home, .galeria, .hist, .sugs{
+    padding: 4rem;
+}
+
+.galimg img{
+    width: 60%;
+    height: auto;
+    margin: 2rem;
+}
+
+.icons img{
+    width: 60%;
+    height: auto;
+    margin: 2rem;    
+}
+
+.footer{
+    background-color: orange;
+    padding: 5rem;
+    color: black;
+}
+

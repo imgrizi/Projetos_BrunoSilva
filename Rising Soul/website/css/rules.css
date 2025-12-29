@@ -1,0 +1,373 @@
+body{
+    scroll-padding-top: 275px;
+    background-color: #86cfde;
+    color: #27347f;
+    overflow-x: hidden; 
+}
+
+h1{
+    font-size: 5rem;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+h3{
+    font-size: 1.5rem;
+}
+
+p{
+    font-size: 1rem;
+}
+
+.noto-sans-display-400 {
+  font-family: "Noto Sans Display", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+
+.playfair-display-sc-regular {
+  font-family: "Playfair Display SC", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.playfair-display-sc-bold {
+  font-family: "Playfair Display SC", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.playfair-display-sc-black {
+  font-family: "Playfair Display SC", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.playfair-display-sc-regular-italic {
+  font-family: "Playfair Display SC", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.playfair-display-sc-bold-italic {
+  font-family: "Playfair Display SC", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.playfair-display-sc-black-italic {
+  font-family: "Playfair Display SC", serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.navbar-toggler{
+    border-color: #27347f;
+    stroke-width: 5rem;
+    
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%2327347f' stroke-width='4' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbar-toggler:hover {
+    border-color: #86cfde;
+}
+
+nav img{
+    width: 10%;
+    height: auto;
+    opacity: 100%; 
+    margin: 0 auto;
+}
+
+.bg-navbar{
+    background-color: aliceblue;
+}
+
+.nav-item{
+    padding: 0 2rem 0 5rem;
+}
+.nav-link{
+   
+   color: #27347f;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav-link:hover{
+    background-color: #27347f;
+    color: #86cfde;
+}
+
+.banner{
+    padding: 10rem;
+    background-image:url('../img/greek_figure_white_op.png')  ;
+    background-repeat: no-repeat;
+    background-position: center;
+   
+    
+}
+
+.sobre{
+    padding: 10rem 4rem;
+}
+
+.titsobre{
+    padding: 3rem 0rem;
+}
+
+.essence{
+    background-image: url('../img/greek_leaf_white_op.png');
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.essence_cont{
+    padding: 10rem;
+}
+
+.e-book{
+    padding: 2rem;
+}
+
+.sinopse{
+    padding: 1rem;
+}
+
+.sinopse p{
+    padding: 0 30rem;
+}
+
+.sinopse a{
+    background-color: #27347f; 
+    color: #86cfde;
+    border-radius:5px;
+    padding: 0.75rem;
+}
+
+.workshops{
+    padding: 10rem;
+}
+.workshops_cont{
+    padding: 2rem;
+}
+
+.imgback{
+    background-image: url(../img/wind.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:contain;
+    
+}
+
+.imgback2{
+    background-image: url(../img/wind2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:contain;
+}
+
+button{
+    background-color: #27347f; 
+    color: #86cfde;
+    border-radius:5px;
+    padding: 0.75rem;
+    border: none;
+    box-shadow: none;
+}
+
+.forms{
+    width: 50%;
+    height: auto;
+    padding: 2rem;
+    margin: 0 auto;
+}
+
+.footer{
+    background-color:aliceblue;
+    color: #27347f;
+    padding: 2rem;
+    margin: 0 auto;
+}
+
+.footer img{
+    width: 20%;
+    height: auto;
+    
+}
+
+.modal-footer img{
+    width: 10%;
+    height: auto;
+}
+
+.social-icons a {
+  color: #27347f; 
+  font-size: 2rem; 
+  margin: 0 1rem;
+  
+}
+
+
+/*Animação*/
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 5s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  /* ------ GERAL ------ */
+  body {
+    font-size: 0.9rem;
+    scroll-padding-top: 150px;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 0.95rem;
+  }
+
+  button {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+  }
+
+  a {
+    font-size: 0.95rem;
+  }
+
+  /* ------ NAVBAR ------ */
+  .navbar .container-fluid {
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    padding: 0.5rem 1rem;
+  }
+
+  .navbar-toggler {
+    order: 1;
+  }
+
+  .navbar-brand {
+    order: 2;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .navbar-brand img {
+    width: 100px;
+  }
+
+  .navbar-collapse {
+    order: 3;
+    width: 100%;
+  }
+
+  .nav-item {
+    padding: 0.5rem 1rem;
+  }
+
+  /* ------ BANNER ------ */
+  .banner {
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    padding: 5rem 1rem;
+  }
+
+  .essence{
+    background-size: 90%;
+  }
+  /* ------ SECTIONS ------ */
+  .sobre,
+  .essence_cont,
+  .workshops {
+    padding: 3rem 1rem;
+  }
+
+  .titsobre {
+    padding: 1.5rem 0;
+  }
+
+  .sinopse {
+    padding: 1rem;
+  }
+
+  .sinopse p {
+    padding: 0 1rem;
+  }
+
+  .e-book {
+    padding: 2rem 1rem;
+  }
+
+  .workshops_cont {
+    padding: 1rem;
+  }
+
+  .forms {
+    width: 90%;
+    padding: 1.5rem;
+  }
+
+  .footer {
+    padding: 1.5rem;
+  }
+
+  .footer img {
+    width: 60px;
+  }
+
+  .modal-footer img {
+    width: 60px;
+  }
+
+  /* ------ IMAGENS DE FUNDO DAS COLUNAS ------ */
+  .imgback,
+  .imgback2 {
+    background-size: contain;
+    background-position: center;
+    min-height: 150px;
+  }
+
+  /* ------ ALINHAMENTO DAS COLUNAS EM MOBILE ------ */
+  .row > [class*="col-"] {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .navbar-book img{
+    width: 30%;
+  }
+}
+
+

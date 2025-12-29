@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musix</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/rules.css">
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+</head>
+<body class="oswald-400">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container-fluid text-color">
+          <a class="navbar-brand" href="#">Musix</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse text-color" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Eventos
+                </a>
+                <ul class="dropdown-menu bg-dark">
+                  <li><a class="dropdown-item" href="#tend">Tendências</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#pais">Pais</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown bg-dark">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Artista
+                </a>
+                <ul class="dropdown-menu bg-dark">
+                  <li><a class="dropdown-item" href="#alb">Albuns</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#est">Estilo</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#play">Playlist</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#let">Letras</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  História
+                </a>
+                <ul class="dropdown-menu bg-dark">
+                  <li><a class="dropdown-item" href="#ano">Ano</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#inst">Instrumento</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#gen">Género</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="modal" data-bs-target="#faqmodal" href="#modalfaq">FAQ</a>
+              </li>
+            </ul>
+            <div id="weather-info" class="d-flex align-items-center navbar-text text-light ms-lg-3">
+              <span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>
+              <span>A carregar temperatura...</span>
+          </div>
+        </div>
+      </nav>
+      <section class="container-fluid text-center justify-content-center banner">
+        <h1>MUSIX</h1>
+        <h2>Vibra de maneira diferente</h2>
+      </section>
+      <section class="container-fluid text-center justify-content-center">
+        <div class="container text-center eventweb">
+            <h2>EVENTOS</h2>
+            <p>Descobre as tendências mais quentes do momento, dos grandes festivais aos concertos intimistas.
+                Explora ainda o que está a acontecer em diversos países e vive a música sem fronteiras.
+            </p>
+          </div>
+              <div class="row align-items-center">
+                <div class="col-md-6 text-center tendweb" id="tend">
+              <h3>TENDÊNCIAS</h3>
+              <p>Descobre as últimas tendências dos festivais dos visuais mais ousados à tecnologia imersiva, os festivais estão a reinventar-se. 
+                Explora o que está a marcar a diferença neste verão e prepara-te para viver a experiência ao máximo.</p>
+                  <button type="button" class="btn mt-3" style="background-color: aliceblue; color: black;" data-bs-toggle="modal" data-bs-target="#tendmodal">
+                SABER MAIS
+              </button>
+              </div>
+              <div class="col-md-6 text-center paisweb" id="pais">
+                <h3>PAÍS</h3>
+                <p>Descobre as tendências de festivais um pouco por todo o mundo desde os ritmos vibrantes do Brasil às experiências culturais imersivas em Itália. 
+                  Cada país está a dar o seu toque único e a redefinir a forma como celebramos.</p>
+              <button type="button" class="btn mt-3" style="background-color: aliceblue; color: black;" data-bs-toggle="modal" data-bs-target="#paismodal">
+                SABER MAIS
+              </button>
+              </div>        
+              </div>
+        </section>
+        <section class="container-fluid text-center justify-content-center bgart mt-5">
+          <div class="container text-center">
+          <h2>ARTISTA</h2>
+            <p>O artista do mês escolhido é Machine Gun Kelly, conhecido pela sua fusão entre rap e pop punk. 
+              Com uma carreira marcada por reinvenções, MGK destaca-se pela atitude irreverente e presença dominante na cena musical.</p>
+            </div>
+            <div class="albweb mt-5" id="alb" >
+            <h3>ALBUNS</h3>
+            <div class="row align-items-center mt-5">
+            <div class="col-md-6 text-center mt-3">
+              <img src="img/mgk_tickets.jpeg" alt="mgk_tickets_for_my_downfall"/><br>
+              <button type="button" class="btn mt-3" style="background-color: aliceblue; color: black;" data-bs-toggle="modal" data-bs-target="#soldout">
+                Tickets To My Downfall "SOLD OUT"
+              </button>
+            </div>
+            <div class="col-md-6 text-center mt-3 ">
+              <div>
+                <img src="img/mgk_mainstream.jpeg" alt="mgk_mainstream_sellout" /><br>
+                <button type="button" class="btn mt-3" style="background-color: aliceblue; color: black;" data-bs-toggle="modal" data-bs-target="#main">
+                  Mainstream Sellout
+                </button>
+            </div>
+            </div>
+          </div>
+        </div>
+          <div class="row align-items-center mt-5">
+              <div class="col-md-6 text-center  mt-3 estiloweb" id="est">
+                <h3>ESTILO</h3>
+                    <p>Descobre mais sobre estilo único de Machine Gun Kelly.
+                      Do rap intenso ao pop punk irreverente, MGK mistura géneros com atitude.
+                      Uma sonoridade crua, emocional e sempre imprevisível.</p>
+                <button type="button" class="btn mt-3" style="background-color: aliceblue; color: black;" data-bs-toggle="modal" data-bs-target="#estilo">
+                  SABER MAIS
+                </button>
+                  </div>
+                    <div class="col-md-6 text-center mt-3 playlistweb" id="play">
+                      <h3>PLAYLIST</h3>
+                      <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DZ06evO44TgnC?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                  </div>
+                  </div>
+                  <div class="container text-center letrasweb mt-5" id="let">
+                  <h3>LETRAS</h3>
+                  <p>As letras de Machine Gun Kelly são marcadas por uma autenticidade crua e emocional que reflete as suas experiências pessoais.
+                    Combinando confissões viscerais com energia rebelde, MGK escreve de forma intensa, sem filtros nem medo de expor fragilidades.
+                    Nesta secção, mergulhamos na forma como ele transforma dor, amor e caos em música.</p>
+                    <button type="button" class="btn mt-3" style="background-color: aliceblue; color: black;" data-bs-toggle="modal" data-bs-target="#letras">
+                      SABER MAIS
+                    </button>
+                    </div>
+      </section>
+      <section class="container-fluid text-center justify-content-center bghist mt-5">
+        <div class="container text-center">
+        <h2>HISTÓRIA</h2>
+        <p>Nesta secção, destacamos os principais acontecimentos musicais do ano escolhido. 
+          Uma viagem no tempo para recordar lançamentos marcantes, tendências e momentos que definiram esse período na música.</p>
+        </div>
+          <div class="row align-items-center mt-5">
+              <div class="col-md-6 text-center anosweb" id="ano">
+                <h3>ANO</h3>
+                <p>Todos os meses, viajamos no tempo até a um ano marcante da música.
+                  Revive os lançamentos, tendências e momentos que definiram cada época.
+                  Uma celebração da história musical, ano após ano.</p>
+                  <button type="button" class="btn mt-3" style="background-color: aliceblue; color: black;" data-bs-toggle="modal" data-bs-target="#anosmodal">
+                    SABER MAIS
+                  </button>
+              </div>
+              <div class="col-md-6 text-center instweb" id="inst">
+                <div>
+                  <h3>INSTRUMENTO</h3>
+                  <p>Todos os meses, destacamos um instrumento que marcou a música de diferentes épocas.
+                    Descobre a sua história, curiosidades e os artistas que o tornaram icónico.
+                    Uma viagem sonora através dos timbres que moldaram gerações.</p>
+                    <button type="button" class="btn mt-3" style="background-color: aliceblue; color: black;" data-bs-toggle="modal" data-bs-target="#instmodal">
+                      SABER MAIS
+                    </button>
+              </div>
+              </div>
+            </div>
+          <div class="container text-center mt-3 genweb" id="gen">
+                <h3>GÉNERO</h3>
+                <p>Todos os meses, exploramos um género musical que deixou marca na história.
+                  Das raízes às reinvenções, mergulha nas sonoridades que definem culturas e gerações.
+                  Descobre artistas, marcos e curiosidades de cada estilo.</p>
+              <button type="button" class="btn mt-3" style="background-color: aliceblue; color: black;" data-bs-toggle="modal" data-bs-target="#genmodal">
+                SABER MAIS
+              </button>
+            </div>
+      </section>
+      <section class="container-fluid text-center footer mt-5">
+        <div class="row">
+          <div class="col-md-6"><a href="#"><h2>Musix</h2></a></div>
+          <div class="col-md-6 text-center"><p>Desenvolvido por Bruno Silva</p></div>
+        </div>
+      </section>
+
+        <!--Modals Eventos-->
+        <div class="modal fade container-fluid text-center justify-content-center mt-3 tend" id="tendmodal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Tendências</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="row align-items-center mt-5 ">
+                    <div class="col-md-6 text-center">
+                      <a href="https://www.vodafoneparedesdecoura.com/" target="_blank"><h3>VODAFONE PAREDES DE COURA</h3></a>
+                      <p>quarta-feira, 13 de agosto de 2025 – sábado, 16 de agosto de 2025</p>
+                    </div>
+                    <div class="col-md-6 text-center ">
+                      <div>
+                        <img src="img/paredes_coura.jpg" alt="vodafone_paredes-coura" class="img-fluid zoom-on-click" /><br />
+                    </div>
+                    </div>
+                    <div class="col-md-6 text-center">
+                        <a href="https://www.tomorrowland.com/home/" target="_blank"><h3>TOMORROWLAND</h3></a>
+                        <p>sexta-feira, 10 de outubro de 2025 – domingo, 12 de outubro de 2025</p>
+                      </div>
+                      <div class="col-md-6 text-center ">
+                        <div>
+                          <img src="img/tomland.png" alt="tomorrowland" class="img-fluid zoom-on-click" /><br />
+                      </div>
+                      </div>
+                      <div class="col-md-6 text-center">
+                        <a href="https://www.luccasummerfestival.it/" target="_blank"><h3>LUCCA SUMMER FEST</h3></a>
+                        <p>sábado, 28 de junho de 2025 – domingo, 27 de julho de 2025</p>
+                      </div>
+                      <div class="col-md-6 text-center ">
+                        <div>
+                          <img src="img/lucca.png" alt="roma_summer_fest" class="img-fluid zoom-on-click" /><br />
+                      </div>
+                      </div>
+                        </div>
+              </div>
+              <div class="modal-footer">
+                <h4>Musix</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade container-fluid text-center justify-content-center mt-3 pais" id="paismodal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">País</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="row galimg mt-4 " >
+                  <div class="col-md-4">
+                      <h4>PORTUGAL</h4>
+                     <ul>
+                      <li><a href="https://nosalive.com/" target="_blank">NOS ALIVE</a></li> 
+                      <li><a href="https://arena.meo.pt/agenda/meo-sudoeste_pt/1904" target="_blank">MEO SUDOESTE</a></li> 
+                      <li><a href="https://www.vodafoneparedesdecoura.com/" target="_blank">VODAFONE PAREDES DE COURA</a></li> 
+                     </ul>
+                  </div>
+                  <div class="col-md-4">
+                      <h4>BRASIL</h4>
+                      <ul>
+                      <li><a href="https://rockinrio.com/rio/pt-br/home/" target="_blank">ROCK IN RIO</a></li>
+                      <li><a href="https://www.tomorrowland.com/home/" target="_blank">TOMORROWLAND BRASIL</a></li>
+                      <li><a href="https://festivaldeverao.com.br/" target="_blank">FESTIVAL DE VERÃO DE SALVADOR</a></li>
+                      </ul>
+                      
+                  </div>
+                  <div class="col-md-4">
+                      <h4>ITÁLIA</h4>
+                      <ul>
+                      <li><a href="https://www.umbriajazz.it/en/" target="_blank">UMBRIA JAZZ</a></li>
+                      <li><a href="https://www.firenzerocks.it/" target="_blank">FIRENZE ROCKS</a></li>
+                      <li><a href="https://www.luccasummerfestival.it/" target="_blank">LUCCA SUMMER FESTIVAL</a></li>
+                      </ul>
+                  </div>
+                  </div>
+              </div>
+              <div class="modal-footer">
+                <h4>Musix</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+            <!--Modals Artista-->
+          <div class="modal fade container-fluid text-center justify-content-center mt-3" id="soldout" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="staticBackdropLabel">Track list</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <ol>
+                    <li>title track</li>
+                    <li>kiss kiss</li>
+                    <li>drunk face </li>
+                    <li>bloody valentine</li>
+                    <li>forget me too by mgk & Halsey</li>
+                    <li>all i know (Ft. Trippie Redd)</li>
+                    <li>WWIII</li>
+                    <li>kevin and barracuda (interlude)</li>
+                    <li>concert for aliens</li>
+                    <li> my ex’s best friend by mgk & blackbear</li>
+                    <li>jawbreaker Lyrics </li>
+                    <li>nothing inside (Ft. ​iann dior)</li>
+                    <li>banyan tree (interlude)</li>
+                    <li>play this when i’m gone</li>
+                  </ol>
+                </div>
+                <div class="modal-footer">
+                  <h4>Musix</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade container-fluid text-center justify-content-center mt-3" id="main" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="staticBackdropLabel">Track list</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <ol>
+                    <li>born with horns</li>
+                    <li>god save me</li>
+                    <li>maybe by mgk & Bring Me The Horizon</li>
+                    <li>drug dealer (Ft. Lil Wayne)</li>
+                    <li>wall of fame (interlude)</li>
+                    <li>mainstream sellout</li>
+                    <li>kevin and barracuda (interlude)</li>
+                    <li> make up sex by mgk & blackbear</li>
+                    <li>​emo girl by mgk & WILLOW</li>
+                    <li>5150</li>
+                    <li>papercuts(album edit)</li>
+                    <li>WW4</li>
+                    <li>ay! by mgk & Lil Wayne</li>
+                    <li>fake love don’t last by mgk & ​iann dior</li>
+                    <li>die in california (Streaming Version)(Ft. Gunna,Landon Barker&Young Thug)</li>
+                    <li>sid&nancy</li>
+                    <li>twin flame</li>
+                  </ol>
+                </div>
+                <div class="modal-footer">
+                  <h4>Musix</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal fade container-fluid text-center justify-content-center mt-3" id="estilo" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">ESTILO</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    Machine Gun Kelly, também conhecido como MGK, é um artista que se destaca pela sua versatilidade e pela forma como desafia os géneros musicais. 
+                    Originalmente, MGK ganhou fama como um rapper explosivo, com um estilo lírico rápido e agressivo, misturando influências do rap de Cleveland com uma atitude punk rock. 
+                    Os seus primeiros trabalhos eram marcados por batidas fortes, letras intensas e uma energia crua que o distinguia no cenário do hip-hop.
+                    No entanto, nos últimos anos, MGK fez uma transição notável para o pop-punk e o rock alternativo, especialmente a partir do álbum "Tickets To My Downfall" (2020). 
+                    Este álbum marcou uma viragem drástica, com guitarras distorcidas, refrões cativantes e uma sonoridade que remete aos anos 90 e 2000, influenciada por bandas como Blink-182 e Sum 41. 
+                    Esta mudança solidificou a sua posição como um ícone do pop-punk moderno, atraindo uma nova base de fãs e mostrando a sua capacidade de reinventar-se.
+                    Assim, o estilo de MGK pode ser descrito como uma fusão dinâmica de hip-hop e rock. 
+                    Ele é um artista que não tem medo de experimentar, misturando a energia e a rebeldia do punk com a fluidez e a narrativa do rap, criando um som que é, ao mesmo tempo, familiar e inovador.
+                  </p>
+                </div>
+                <div class="modal-footer">
+                  <h4>Musix</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal fade container-fluid text-center justify-content-center mt-3" id="letras" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">LETRAS</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    Machine Gun Kelly (MGK) tem-se destacado não apenas pela sua sonoridade híbrida entre rap e punk rock, 
+                    mas também pela forma como compõe as suas letras — cruas, pessoais e emocionalmente intensas. 
+                    Ao longo da sua discografia, o artista tem usado a música como um veículo de expressão emocional, 
+                    abordando temas como ansiedade, vícios, relações amorosas e conflitos internos.
+                    O processo de escrita de MGK é fortemente influenciado por experiências vividas. Muitas das suas letras funcionam como desabafos, 
+                    assumindo um tom confessional que o aproxima do público. A autenticidade é uma constante no seu trabalho: ao expor fragilidades e dilemas pessoais, 
+                    o músico quebra a barreira entre artista e ouvinte.
+                    O envolvimento direto na composição das suas faixas é uma marca da sua carreira. Em estúdio, 
+                    MGK colabora frequentemente com produtores e artistas que partilham da mesma sensibilidade artística, como blackbear, Halsey e Travis Barker. 
+                    Estas parcerias têm contribuído para diversificar o seu estilo, sem comprometer a coerência lírica.
+                    Ao alternar entre o ritmo incisivo do rap e o tom emocional do punk, MGK constrói uma linguagem própria que tem cativado uma audiência fiel. 
+                    As suas letras revelam uma busca constante por identidade e equilíbrio, refletindo uma geração que encontra na música um espaço seguro para se reconhecer.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                  <h4>Musix</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal fade container-fluid text-center justify-content-center mt-3 tend" id="anosmodal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">1998 na Música: Entre Ícones e Novos Rumos</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p>1998 marcou uma viragem na música global. Britney Spears estreava-se com "...Baby One More Time", enquanto boy bands como os Backstreet Boys dominavam o pop. 
+                    Lauryn Hill revolucionava o hip-hop com The Miseducation of Lauryn Hill, e o rock alternativo mantinha-se forte com bandas como os Goo Goo Dolls. 
+                    O som eletrónico começava a ganhar destaque, abrindo caminho para as tendências dos anos 2000.</p>
+                </div>
+                <div class="modal-footer">
+                  <h4>Musix</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal fade container-fluid text-center justify-content-center mt-3 tend" id="instmodal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">O Mellotron em 1998: O Teclado da Nostalgia Reinventado</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p>Em 1998, o Mellotron — famoso por reproduzir sons de cordas, flautas e coros a partir de fitas analógicas — voltou a brilhar graças ao álbum Moon Safari da banda francesa Air. 
+                    Com o seu som etéreo e vintage, o instrumento ajudou a definir a estética sonora do chillout e do pop eletrónico da época. 
+                    O Mellotron provou que, mesmo em plena viragem digital, havia espaço para a magia dos sons analógicos do passado.</p>
+                </div>
+                <div class="modal-footer">
+                  <h4>Musix</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="modal fade container-fluid text-center justify-content-center mt-3 tend" id="genmodal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Hip-Hop em 1998: Um Ano de Ouro para o Género</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p>1998 foi um ano crucial para o hip-hop, marcando um momento de grande maturidade e diversidade musical. 
+                    Artistas como Lauryn Hill, com o aclamado The Miseducation of Lauryn Hill, e Jay-Z, com Vol. 2... Hard Knock Life, trouxeram lirismo, inovação e impacto cultural. 
+                    O género afirmava-se cada vez mais como uma força dominante no panorama global, misturando mensagens sociais, batidas marcantes e estilos regionais que expandiam os limites do rap.</p>
+                </div>
+                <div class="modal-footer">
+                  <h4>Musix</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="modal fade container-fluid text-center justify-content-center mt-3 tend" id="instmodal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">O Mellotron em 1998: O Teclado da Nostalgia Reinventado</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p>Em 1998, o Mellotron — famoso por reproduzir sons de cordas, flautas e coros a partir de fitas analógicas — voltou a brilhar graças ao álbum Moon Safari da banda francesa Air. 
+                    Com o seu som etéreo e vintage, o instrumento ajudou a definir a estética sonora do chillout e do pop eletrónico da época. 
+                    O Mellotron provou que, mesmo em plena viragem digital, havia espaço para a magia dos sons analógicos do passado.</p>
+                </div>
+                <div class="modal-footer">
+                  <h4>Musix</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="modal fade container-fluid text-center justify-content-center mt-3 tend" id="faqmodal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Perguntas Frequentes (FAQ)</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="accordion" id="faqAccordionInsideModal">
+        
+                            <div class="accordion-item">
+                                <h3 class="accordion-header" id="headingConsiste">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseConsiste" aria-expanded="false" aria-controls="collapseConsiste">
+                                        Em que consiste o site Musix?
+                                    </button>
+                                </h3>
+                                <div id="collapseConsiste" class="accordion-collapse collapse" aria-labelledby="headingConsiste" data-bs-parent="#faqAccordionInsideModal">
+                                    <div class="accordion-body text-start">
+                                        O Musix é o seu portal dedicado ao mundo da música, oferecendo informações detalhadas sobre eventos musicais (tendências e por país), destacando artistas do mês com a sua discografia e estilo, e explorando a rica história da música através de anos marcantes, instrumentos icónicos e géneros musicais.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h3 class="accordion-header" id="headingIntuito">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseIntuito" aria-expanded="false" aria-controls="collapseIntuito">
+                                        Qual é o principal intuito do Musix?
+                                    </button>
+                                </h3>
+                                <div id="collapseIntuito" class="accordion-collapse collapse" aria-labelledby="headingIntuito" data-bs-parent="#faqAccordionInsideModal">
+                                    <div class="accordion-body text-start">
+                                        O principal intuito do Musix é ser um guia completo para os amantes da música, oferecendo conhecimento, inspiração e uma plataforma para explorar o impacto da música ao longo da história e no cenário atual.
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="accordion-item">
+                                <h3 class="accordion-header" id="headingCriador">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCriador" aria-expanded="false" aria-controls="collapseCriador">
+                                        Quem criou o website Musix?
+                                    </button>
+                                </h3>
+                                <div id="collapseCriador" class="accordion-collapse collapse" aria-labelledby="headingCriador" data-bs-parent="#faqAccordionInsideModal">
+                                    <div class="accordion-body text-start">
+                                        O website Musix foi desenvolvido por Bruno Silva.
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="accordion-item">
+                                <h3 class="accordion-header" id="headingTecnologias">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTecnologias" aria-expanded="false" aria-controls="collapseTecnologias">
+                                        Que tecnologias foram usadas para criar o Musix?
+                                    </button>
+                                </h3>
+                                <div id="collapseTecnologias" class="accordion-collapse collapse" aria-labelledby="headingTecnologias" data-bs-parent="#faqAccordionInsideModal">
+                                    <div class="accordion-body text-start">
+                                        O Musix foi desenvolvido utilizando Bootstrap para o layout e responsividade, juntamente com HTML e CSS personalizados.
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                    <div class="modal-footer">
+                        <h4>Musix</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+      <script src="js/bootstrap.bundle.js"></script>
+      <script src="js/scripts.js"></script>
+</body>
+</html>
