@@ -265,9 +265,9 @@ window.addEventListener('DOMContentLoaded', () => {
 
   // Caminhos corretos das imagens
   const imagens = [
-    '../img/Slide-Water-Bottle-Mockup_purple.png', // Sobe da pasta 'js' para aceder a 'img'
-    '../img/Slide-Water-Bottle-Mockup.png',      // Sobe da pasta 'js' para aceder a 'img'
-    '../img/Slide-Water-Bottle-Mockup_orange.png'   // Sobe da pasta 'js' para aceder a 'img'
+    'img/Slide-Water-Bottle-Mockup_purple.png', // Sobe da pasta 'js' para aceder a 'img'
+    'img/Slide-Water-Bottle-Mockup.png',      // Sobe da pasta 'js' para aceder a 'img'
+    'img/Slide-Water-Bottle-Mockup_orange.png'   // Sobe da pasta 'js' para aceder a 'img'
 ];
 
   if (!slider || !bottle) {

@@ -303,6 +303,7 @@ button{
     background-position: center top;
     background-repeat: no-repeat;
     padding: 5rem 1rem;
+    margin-bottom: 1rem;
   }
 
   .essence{
